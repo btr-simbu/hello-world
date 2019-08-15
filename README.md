@@ -1,2 +1,15 @@
 # hello-world
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Before explaining CodeIgniter’s approach to data validation, let’s describe the ideal scenario:
+
+A form is displayed.
+You fill it in and submit it.
+If you submitted something invalid, or perhaps missed a required item, the form is redisplayed containing your data along with an error message describing the problem.
+This process continues until you have submitted a valid form.
+On the receiving end, the script must:
+
+Check for required data.
+Verify that the data is of the correct type, and meets the correct criteria. For example, if a username is submitted it must be validated to contain only permitted characters. It must be of a minimum length, and not exceed a maximum length. The username can’t be someone else’s existing username, or perhaps even a reserved word. Etc.
+Sanitize the data for security.
+Pre-format the data if needed (Does the data need to be trimmed? HTML encoded? Etc.)
+Prep the data for insertion in the database.
